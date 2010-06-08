@@ -1,7 +1,7 @@
 #
 #
-CFLAGS = -fast -arch ev56
-CC = ccc 
+CFLAGS = -O2 
+CC = icc -lmkl_lapack -lmkl -lguide -lpthread
 
 SRCS = \
 bounds.c diag.c dudp_calc.c dump.c fixup.c gaussj.c grbondi.c \
